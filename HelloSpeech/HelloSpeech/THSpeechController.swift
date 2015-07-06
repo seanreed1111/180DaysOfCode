@@ -36,7 +36,7 @@ class THSpeechController{
         sentences.append("Hello, Joshua")
         sentences.append("A strange game. The only winning move is not to play.")
         sentences.append("   ")
-        sentences.append("How   about   a   nice   game   of   chess?")
+        sentences.append("How about a nice game of chess?")
         return sentences
     }
 }
