@@ -26,6 +26,11 @@
                                             <constraint firstAttribute="width" constant="125" id="fxe-gv-7fr"/>
                                             <constraint firstAttribute="height" constant="125" id="jTh-5m-nlH"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7OV-M1-dPO" userLabel="GreenBoxView" customClass="BoxedBorderView" customModule="MondrianSandbox" customModuleProvider="target">
                                         <rect key="frame" x="170" y="137.5" width="60" height="125"/>

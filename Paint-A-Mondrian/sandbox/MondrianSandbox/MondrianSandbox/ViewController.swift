@@ -24,11 +24,11 @@ class ViewController: UIViewController {
         
         // add a black border to them in viewDidLoad
         
-        redBoxView.layer.borderColor = UIColor.blackColor().CGColor
-        redBoxView.layer.borderWidth = 2.0
-        
-        greenBoxView.layer.borderColor = UIColor.blackColor().CGColor
-        greenBoxView.layer.borderWidth = 2.0
+//        redBoxView.layer.borderColor = UIColor.blackColor().CGColor
+//        redBoxView.layer.borderWidth = 2.0
+//        
+//        greenBoxView.layer.borderColor = UIColor.blackColor().CGColor
+//        greenBoxView.layer.borderWidth = 2.0
     }
 
 
