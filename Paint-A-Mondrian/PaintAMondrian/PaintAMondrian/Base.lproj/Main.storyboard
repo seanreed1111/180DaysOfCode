@@ -20,7 +20,7 @@
                                 <rect key="frame" x="100" y="100" width="380" height="380"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZB-38-HUg" userLabel="ButtonContainerView">
-                                        <rect key="frame" x="0.0" y="310.5" width="400" height="89.5"/>
+                                        <rect key="frame" x="0.0" y="311" width="400" height="90"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmw-Fq-3yp">
                                                 <rect key="frame" x="27" y="19" width="46" height="30"/>
@@ -49,93 +49,331 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.17146829290000001" green="0.84092729649999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="centerY" secondItem="mrD-32-mzk" secondAttribute="centerY" constant="10.75" id="4WM-Qu-3CQ"/>
-                                            <constraint firstAttribute="centerY" secondItem="BGj-C3-Ji1" secondAttribute="centerY" constant="10.75" id="6oE-Ll-VBN"/>
-                                            <constraint firstItem="qmw-Fq-3yp" firstAttribute="leading" secondItem="kZB-38-HUg" secondAttribute="leading" constant="27" id="84d-1V-4XR"/>
                                             <constraint firstItem="mrD-32-mzk" firstAttribute="leading" secondItem="qmw-Fq-3yp" secondAttribute="trailing" constant="61" id="8bL-2l-lou"/>
+                                            <constraint firstItem="4g1-Oj-IBN" firstAttribute="baseline" secondItem="BGj-C3-Ji1" secondAttribute="baseline" id="HKm-1c-2OB"/>
                                             <constraint firstItem="4g1-Oj-IBN" firstAttribute="leading" secondItem="mrD-32-mzk" secondAttribute="trailing" constant="54" id="SeQ-yj-Tyi"/>
-                                            <constraint firstAttribute="centerY" secondItem="qmw-Fq-3yp" secondAttribute="centerY" constant="10.75" id="VIk-O5-hNh"/>
-                                            <constraint firstAttribute="centerY" secondItem="4g1-Oj-IBN" secondAttribute="centerY" constant="10.75" id="iLd-Wy-hxX"/>
-                                            <constraint firstAttribute="trailing" secondItem="BGj-C3-Ji1" secondAttribute="trailing" constant="35" id="wvd-HY-sZi"/>
+                                            <constraint firstItem="BGj-C3-Ji1" firstAttribute="leading" secondItem="4g1-Oj-IBN" secondAttribute="trailing" constant="39" id="SyC-s2-6H4"/>
+                                            <constraint firstItem="4g1-Oj-IBN" firstAttribute="top" secondItem="kZB-38-HUg" secondAttribute="top" constant="19" id="Vaw-RO-IAT"/>
+                                            <constraint firstItem="4g1-Oj-IBN" firstAttribute="baseline" secondItem="mrD-32-mzk" secondAttribute="baseline" id="h7i-sF-sYI"/>
+                                            <constraint firstItem="4g1-Oj-IBN" firstAttribute="baseline" secondItem="qmw-Fq-3yp" secondAttribute="baseline" id="lam-JJ-Rhi"/>
+                                            <constraint firstAttribute="trailing" secondItem="4g1-Oj-IBN" secondAttribute="trailing" constant="120" id="zq4-IF-oSu"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Rm-2N-tVs" userLabel="MondrianView">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rm-2N-tVs" userLabel="MondrianView">
                                         <rect key="frame" x="40" y="48" width="300" height="229"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dcw-3U-XVj" userLabel="Boxed Border View1" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cz9-ke-T4i" userLabel="Boxed Border View2" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="91" y="14" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Rz-MO-DVg" userLabel="Boxed Border View3" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="101" y="24" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5rM-M2-3M6" userLabel="Boxed Border View4" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="111" y="34" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WwZ-9b-WTB" userLabel="Boxed Border View5" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="121" y="44" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VX2-ar-4mH" userLabel="Boxed Border View16" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="239" y="169" width="61" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="7"/>
+                                                        <real key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BAB-ae-u9D" userLabel="Boxed Border View6" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="131" y="54" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7C-cB-9ra" userLabel="Boxed Border View13" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="239" y="0.0" width="61" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="ioc-To-a4B"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="atn-wY-GgN" userLabel="Boxed Border View7" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="141" y="64" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIC-2P-4Jr" userLabel="Boxed Border View8" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="80" y="181" width="80" height="48"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wvr-DF-KeC" userLabel="Boxed Border View9" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="161" y="84" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dcw-3U-XVj" userLabel="Boxed Border View1" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="dIk-6N-VEb"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1g-gQ-pzI" userLabel="Boxed Border View10" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="171" y="94" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cz9-ke-T4i" userLabel="Boxed Border View2" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="59" width="80" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vcX-bg-5Qn" userLabel="Boxed Border View11" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="181" y="104" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WwZ-9b-WTB" userLabel="Boxed Border View5" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="80" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="fi6-KV-gNK"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MGR-Ww-lWp" userLabel="Boxed Border View12" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="191" y="114" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAB-ae-u9D" userLabel="Boxed Border View6" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="80" y="59" width="80" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="t0m-7s-hdD"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7C-cB-9ra" userLabel="Boxed Border View13" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="201" y="124" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvr-DF-KeC" userLabel="Boxed Border View9" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="160" y="0.0" width="80" height="51"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="51" id="Vk2-gR-NYm"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P8h-Dv-zPf" userLabel="Boxed Border View14" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="211" y="134" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1g-gQ-pzI" userLabel="Boxed Border View10" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="160" y="51" width="80" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="5wK-up-bEe"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYq-oK-ZBA" userLabel="Boxed Border View15" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="221" y="144" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcX-bg-5Qn" userLabel="Boxed Border View11" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="160" y="110" width="80" height="33"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="amb-zs-Dth"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VX2-ar-4mH" userLabel="Boxed Border View16" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="231" y="154" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MGR-Ww-lWp" userLabel="Boxed Border View12" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="160" y="142" width="80" height="87"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cIC-2P-4Jr" userLabel="Boxed Border View8" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="64" width="80" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Rz-MO-DVg" userLabel="Boxed Border View3" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="89" width="80" height="75"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="b1h-qb-tlT"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5rM-M2-3M6" userLabel="Boxed Border View4" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="161" width="80" height="68"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atn-wY-GgN" userLabel="Boxed Border View7" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="80" y="119" width="80" height="63"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8h-Dv-zPf" userLabel="Boxed Border View14" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="239" y="59" width="61" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYq-oK-ZBA" userLabel="Boxed Border View15" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="239" y="119" width="61" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="0Ci-zO-f2A"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="SQN-jk-sHU"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96460659207976818" green="0.980758230398868" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="leading" secondItem="cIC-2P-4Jr" secondAttribute="leading" id="0Sm-lr-zxM"/>
+                                            <constraint firstAttribute="trailing" secondItem="cIC-2P-4Jr" secondAttribute="trailing" constant="140" id="13Q-1M-m9H"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="leading" secondItem="atn-wY-GgN" secondAttribute="leading" id="21t-ww-Dh0"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="centerX" secondItem="WwZ-9b-WTB" secondAttribute="centerX" id="2Bk-Tw-bC3"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="leading" secondItem="7Rm-2N-tVs" secondAttribute="leading" constant="80" id="2Pj-e3-yIH"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="leading" secondItem="BAB-ae-u9D" secondAttribute="leading" id="2Wv-hv-Toi"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="trailing" secondItem="cIC-2P-4Jr" secondAttribute="trailing" id="3C7-TN-4Iy"/>
+                                            <constraint firstItem="MGR-Ww-lWp" firstAttribute="trailing" secondItem="vcX-bg-5Qn" secondAttribute="trailing" id="3FR-yF-HYS"/>
+                                            <constraint firstAttribute="bottom" secondItem="cIC-2P-4Jr" secondAttribute="bottom" id="3nX-hk-DiO"/>
+                                            <constraint firstAttribute="trailing" secondItem="BAB-ae-u9D" secondAttribute="trailing" constant="140" id="3r1-r5-cgS"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="trailing" secondItem="atn-wY-GgN" secondAttribute="trailing" id="47H-gM-6hq"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="leading" secondItem="8Rz-MO-DVg" secondAttribute="trailing" id="4FL-2C-G9V"/>
+                                            <constraint firstItem="5rM-M2-3M6" firstAttribute="leading" secondItem="8Rz-MO-DVg" secondAttribute="leading" id="4pp-l0-hl1"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="centerY" secondItem="P8h-Dv-zPf" secondAttribute="centerY" id="5yc-yx-J3j"/>
+                                            <constraint firstAttribute="bottom" secondItem="BAB-ae-u9D" secondAttribute="bottom" constant="110" id="7mG-Iz-hsp"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="leading" secondItem="7Rm-2N-tVs" secondAttribute="leading" constant="80" id="8Wt-Sc-sPG"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" constant="59" id="8ZR-9o-Jun"/>
+                                            <constraint firstAttribute="bottom" secondItem="cIC-2P-4Jr" secondAttribute="bottom" id="9HM-XY-wMU"/>
+                                            <constraint firstAttribute="bottom" secondItem="MGR-Ww-lWp" secondAttribute="bottom" id="9eA-Qy-s2l"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="leading" secondItem="7Rm-2N-tVs" secondAttribute="leading" constant="80" id="9fn-6e-ZHz"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="trailing" secondItem="WwZ-9b-WTB" secondAttribute="trailing" id="A0S-LO-GRW"/>
+                                            <constraint firstItem="MGR-Ww-lWp" firstAttribute="leading" secondItem="Wvr-DF-KeC" secondAttribute="leading" id="A2O-94-8CC"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="top" secondItem="Wvr-DF-KeC" secondAttribute="bottom" constant="59" id="A7E-uY-GYt"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="top" secondItem="pYq-oK-ZBA" secondAttribute="top" id="Ad2-Fc-RAn"/>
+                                            <constraint firstItem="z7C-cB-9ra" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" id="B03-hj-2OI"/>
+                                            <constraint firstItem="MGR-Ww-lWp" firstAttribute="trailing" secondItem="Wvr-DF-KeC" secondAttribute="trailing" id="B6V-6t-lWI"/>
+                                            <constraint firstItem="Wvr-DF-KeC" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" id="CPT-LU-Oje"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="leading" secondItem="BAB-ae-u9D" secondAttribute="trailing" id="DAU-EQ-vYl"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="centerX" secondItem="atn-wY-GgN" secondAttribute="centerX" id="DC2-B2-bOd"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="trailing" secondItem="cIC-2P-4Jr" secondAttribute="trailing" id="EP5-vu-7DV"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="centerX" secondItem="cIC-2P-4Jr" secondAttribute="centerX" id="EUG-At-6az"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="leading" secondItem="7Rm-2N-tVs" secondAttribute="leading" constant="160" id="Eir-DQ-CFd"/>
+                                            <constraint firstItem="5rM-M2-3M6" firstAttribute="top" secondItem="Cz9-ke-T4i" secondAttribute="bottom" constant="72" id="F1f-NY-Y4B"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="centerX" secondItem="Wvr-DF-KeC" secondAttribute="centerX" id="FOC-ns-PXh"/>
+                                            <constraint firstItem="pYq-oK-ZBA" firstAttribute="leading" secondItem="P8h-Dv-zPf" secondAttribute="leading" id="FR8-R6-Z3x"/>
+                                            <constraint firstItem="MGR-Ww-lWp" firstAttribute="leading" secondItem="vcX-bg-5Qn" secondAttribute="leading" id="FSD-Jt-5w5"/>
+                                            <constraint firstAttribute="trailing" secondItem="vcX-bg-5Qn" secondAttribute="trailing" constant="60" id="FYp-By-AON"/>
+                                            <constraint firstItem="VX2-ar-4mH" firstAttribute="top" secondItem="pYq-oK-ZBA" secondAttribute="bottom" id="GEj-Jx-SnP"/>
+                                            <constraint firstItem="MGR-Ww-lWp" firstAttribute="leading" secondItem="cIC-2P-4Jr" secondAttribute="trailing" id="GfJ-Wy-Jaa"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="leading" secondItem="cIC-2P-4Jr" secondAttribute="leading" id="I5X-x4-kph"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="bottom" secondItem="VX2-ar-4mH" secondAttribute="bottom" id="IMx-nl-oFb"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="leading" secondItem="BAB-ae-u9D" secondAttribute="leading" id="Ix1-gV-6H1"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="centerX" secondItem="c1g-gQ-pzI" secondAttribute="centerX" id="JiL-2U-Wua"/>
+                                            <constraint firstItem="5rM-M2-3M6" firstAttribute="trailing" secondItem="8Rz-MO-DVg" secondAttribute="trailing" id="LKf-VE-fEz"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="leading" secondItem="WwZ-9b-WTB" secondAttribute="leading" id="LRr-8y-OTi"/>
+                                            <constraint firstItem="MGR-Ww-lWp" firstAttribute="leading" secondItem="atn-wY-GgN" secondAttribute="trailing" id="Lfk-l1-CUf"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="centerX" secondItem="cIC-2P-4Jr" secondAttribute="centerX" id="Mcy-uZ-UGI"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="top" secondItem="Cz9-ke-T4i" secondAttribute="top" id="NAk-gI-uHb"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="trailing" secondItem="BAB-ae-u9D" secondAttribute="trailing" id="Nrv-n3-HxS"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="leading" secondItem="7Rm-2N-tVs" secondAttribute="leading" constant="80" id="OYD-88-Ysh"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="trailing" secondItem="Wvr-DF-KeC" secondAttribute="trailing" id="P7z-jj-kaa"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="trailing" secondItem="WwZ-9b-WTB" secondAttribute="trailing" id="PUp-hw-mgi"/>
+                                            <constraint firstItem="WwZ-9b-WTB" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" id="PfR-Cq-FYG"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="trailing" secondItem="WwZ-9b-WTB" secondAttribute="trailing" id="Py1-my-nxl"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="trailing" secondItem="BAB-ae-u9D" secondAttribute="trailing" id="PzY-3i-6TJ"/>
+                                            <constraint firstItem="pYq-oK-ZBA" firstAttribute="trailing" secondItem="z7C-cB-9ra" secondAttribute="trailing" id="QDU-wS-Iq9"/>
+                                            <constraint firstAttribute="trailing" secondItem="vcX-bg-5Qn" secondAttribute="trailing" constant="60" id="SNd-uU-CnH"/>
+                                            <constraint firstAttribute="bottom" secondItem="atn-wY-GgN" secondAttribute="bottom" constant="47" id="SvR-96-yUG"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="top" secondItem="BAB-ae-u9D" secondAttribute="bottom" constant="62" id="SyS-5E-PrL"/>
+                                            <constraint firstItem="pYq-oK-ZBA" firstAttribute="trailing" secondItem="VX2-ar-4mH" secondAttribute="trailing" id="Tan-rb-us3"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="centerX" secondItem="WwZ-9b-WTB" secondAttribute="centerX" id="ThG-hO-kLV"/>
+                                            <constraint firstItem="Cz9-ke-T4i" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" constant="59" id="TkS-Tt-U0c"/>
+                                            <constraint firstItem="5rM-M2-3M6" firstAttribute="trailing" secondItem="Cz9-ke-T4i" secondAttribute="trailing" id="UIy-jg-09F"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" constant="119" id="UTj-x3-K5p"/>
+                                            <constraint firstAttribute="width" constant="300" id="Ufk-WL-Zgs"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" constant="59" id="VCB-Cw-nVt"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="trailing" secondItem="BAB-ae-u9D" secondAttribute="trailing" id="VO3-YJ-Hvf"/>
+                                            <constraint firstItem="8Rz-MO-DVg" firstAttribute="top" secondItem="Cz9-ke-T4i" secondAttribute="bottom" id="W8M-03-FRE"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="bottom" secondItem="MGR-Ww-lWp" secondAttribute="bottom" id="X5S-5W-oM5"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="leading" secondItem="atn-wY-GgN" secondAttribute="trailing" id="X70-zj-iSi"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" constant="59" id="Y22-k0-ZBT"/>
+                                            <constraint firstAttribute="bottom" secondItem="vcX-bg-5Qn" secondAttribute="bottom" constant="86" id="YXP-EN-QeT"/>
+                                            <constraint firstItem="Dcw-3U-XVj" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" id="a55-uJ-4ri"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="trailing" secondItem="cIC-2P-4Jr" secondAttribute="trailing" id="bjd-my-tAn"/>
+                                            <constraint firstItem="5rM-M2-3M6" firstAttribute="leading" secondItem="7Rm-2N-tVs" secondAttribute="leading" id="csa-CG-pQL"/>
+                                            <constraint firstItem="pYq-oK-ZBA" firstAttribute="trailing" secondItem="P8h-Dv-zPf" secondAttribute="trailing" id="dBj-Wt-MsG"/>
+                                            <constraint firstItem="5rM-M2-3M6" firstAttribute="bottom" secondItem="cIC-2P-4Jr" secondAttribute="bottom" id="doc-kC-6Af"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="trailing" secondItem="WwZ-9b-WTB" secondAttribute="trailing" id="eIE-iP-yMw"/>
+                                            <constraint firstItem="MGR-Ww-lWp" firstAttribute="trailing" secondItem="c1g-gQ-pzI" secondAttribute="trailing" id="enX-8m-KzJ"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="top" secondItem="BAB-ae-u9D" secondAttribute="bottom" id="f9l-xf-4PR"/>
+                                            <constraint firstItem="Dcw-3U-XVj" firstAttribute="leading" secondItem="7Rm-2N-tVs" secondAttribute="leading" constant="20" symbolic="YES" id="gRp-58-wEo"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="leading" secondItem="MGR-Ww-lWp" secondAttribute="leading" id="glx-e6-LxJ"/>
+                                            <constraint firstItem="pYq-oK-ZBA" firstAttribute="top" secondItem="P8h-Dv-zPf" secondAttribute="bottom" id="gnK-Ao-kP3"/>
+                                            <constraint firstItem="pYq-oK-ZBA" firstAttribute="leading" secondItem="VX2-ar-4mH" secondAttribute="leading" id="gyH-qf-I2a"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="trailing" secondItem="atn-wY-GgN" secondAttribute="trailing" id="hOu-dM-wYR"/>
+                                            <constraint firstAttribute="bottom" secondItem="cIC-2P-4Jr" secondAttribute="bottom" id="hab-lf-VJL"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="trailing" secondItem="MGR-Ww-lWp" secondAttribute="trailing" id="hqF-NC-lrY"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" constant="110" id="hvc-PY-YOO"/>
+                                            <constraint firstItem="c1g-gQ-pzI" firstAttribute="top" secondItem="Wvr-DF-KeC" secondAttribute="bottom" id="iKE-H0-CEQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="atn-wY-GgN" secondAttribute="trailing" constant="140" id="iNE-Fy-zyJ"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="leading" secondItem="BAB-ae-u9D" secondAttribute="leading" id="iza-WE-KlF"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="centerY" secondItem="8Rz-MO-DVg" secondAttribute="centerY" id="jZ7-YN-x7w"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="leading" secondItem="7Rm-2N-tVs" secondAttribute="leading" constant="160" id="kip-cA-8N8"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="leading" secondItem="7Rm-2N-tVs" secondAttribute="leading" constant="80" id="lBB-Wp-zUo"/>
+                                            <constraint firstItem="pYq-oK-ZBA" firstAttribute="leading" secondItem="z7C-cB-9ra" secondAttribute="leading" id="m99-EZ-R9N"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="top" secondItem="BAB-ae-u9D" secondAttribute="bottom" id="mJd-6u-BvP"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="top" secondItem="P8h-Dv-zPf" secondAttribute="top" id="mSO-XY-8T9"/>
+                                            <constraint firstItem="WwZ-9b-WTB" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" id="na1-oP-vx3"/>
+                                            <constraint firstAttribute="bottom" secondItem="cIC-2P-4Jr" secondAttribute="bottom" id="olK-8O-sLw"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="trailing" secondItem="c1g-gQ-pzI" secondAttribute="trailing" id="ooQ-LV-RQl"/>
+                                            <constraint firstItem="5rM-M2-3M6" firstAttribute="leading" secondItem="Cz9-ke-T4i" secondAttribute="leading" id="pIh-2R-0gC"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="bottom" secondItem="P8h-Dv-zPf" secondAttribute="bottom" id="pJA-0J-Ekd"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="centerX" secondItem="BAB-ae-u9D" secondAttribute="centerX" id="pXQ-PJ-kMf"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" constant="119" id="qEk-WE-Qe6"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" constant="181" id="qGy-Ol-73N"/>
+                                            <constraint firstItem="MGR-Ww-lWp" firstAttribute="leading" secondItem="c1g-gQ-pzI" secondAttribute="leading" id="qlj-CL-wsc"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="leading" secondItem="WwZ-9b-WTB" secondAttribute="leading" id="qx5-TP-KaF"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="centerX" secondItem="WwZ-9b-WTB" secondAttribute="centerX" id="rTF-cH-sMM"/>
+                                            <constraint firstItem="z7C-cB-9ra" firstAttribute="leading" secondItem="WwZ-9b-WTB" secondAttribute="trailing" constant="79" id="rp8-vm-GHB"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="leading" secondItem="cIC-2P-4Jr" secondAttribute="leading" id="sCf-Yf-h4N"/>
+                                            <constraint firstAttribute="bottom" secondItem="vcX-bg-5Qn" secondAttribute="bottom" constant="86" id="sQA-50-OfD"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" constant="110" id="soz-J9-hmc"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="leading" secondItem="WwZ-9b-WTB" secondAttribute="leading" id="tqf-dO-iys"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="centerX" secondItem="MGR-Ww-lWp" secondAttribute="centerX" id="uSn-F5-AEY"/>
+                                            <constraint firstItem="BAB-ae-u9D" firstAttribute="leading" secondItem="WwZ-9b-WTB" secondAttribute="leading" id="vqf-W7-924"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="leading" secondItem="atn-wY-GgN" secondAttribute="leading" id="wki-Bj-W3L"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="leading" secondItem="7Rm-2N-tVs" secondAttribute="leading" constant="80" id="wln-98-A79"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="centerX" secondItem="atn-wY-GgN" secondAttribute="centerX" id="wmb-tp-wkR"/>
+                                            <constraint firstAttribute="bottom" secondItem="atn-wY-GgN" secondAttribute="bottom" constant="47" id="x4X-rM-Nm0"/>
+                                            <constraint firstItem="cIC-2P-4Jr" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="top" constant="181" id="xBj-IV-rtJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="z7C-cB-9ra" secondAttribute="trailing" id="xMw-tV-z8c"/>
+                                            <constraint firstItem="MGR-Ww-lWp" firstAttribute="top" secondItem="c1g-gQ-pzI" secondAttribute="bottom" constant="31" id="xhX-vA-Ace"/>
+                                            <constraint firstItem="atn-wY-GgN" firstAttribute="centerX" secondItem="BAB-ae-u9D" secondAttribute="centerX" id="xkU-v3-DbF"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="leading" secondItem="c1g-gQ-pzI" secondAttribute="leading" id="xqr-cK-ygb"/>
+                                            <constraint firstAttribute="bottom" secondItem="VX2-ar-4mH" secondAttribute="bottom" id="yft-Cp-Fk0"/>
+                                            <constraint firstItem="WwZ-9b-WTB" firstAttribute="leading" secondItem="Dcw-3U-XVj" secondAttribute="trailing" id="yxl-Ag-B5E"/>
+                                            <constraint firstItem="vcX-bg-5Qn" firstAttribute="leading" secondItem="Wvr-DF-KeC" secondAttribute="leading" id="zK5-z9-XPW"/>
+                                            <constraint firstItem="5rM-M2-3M6" firstAttribute="leading" secondItem="Dcw-3U-XVj" secondAttribute="leading" id="za1-fM-DIv"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="gRp-58-wEo"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paint A Mondrian!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xho-Zo-XYO">
-                                        <rect key="frame" x="122" y="8" width="137" height="20.5"/>
+                                        <rect key="frame" x="122" y="8" width="137" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -143,13 +381,16 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.95842399165560799" green="1" blue="0.88334645248324961" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="kZB-38-HUg" firstAttribute="leading" secondItem="Pzx-tb-dBl" secondAttribute="leading" id="7Ro-aV-9mC"/>
+                                    <constraint firstAttribute="trailing" secondItem="kZB-38-HUg" secondAttribute="trailing" constant="-20" id="9xW-3R-16s"/>
+                                    <constraint firstItem="kZB-38-HUg" firstAttribute="top" secondItem="7Rm-2N-tVs" secondAttribute="bottom" constant="34" id="AOE-bM-Jfg"/>
                                     <constraint firstAttribute="width" constant="380" id="Baq-Xn-VDp"/>
+                                    <constraint firstItem="7Rm-2N-tVs" firstAttribute="top" secondItem="Pzx-tb-dBl" secondAttribute="top" constant="48" id="CVu-jL-rnh"/>
+                                    <constraint firstItem="7Rm-2N-tVs" firstAttribute="centerX" secondItem="Xho-Zo-XYO" secondAttribute="centerX" id="EVE-Vn-Y5g"/>
                                     <constraint firstItem="Xho-Zo-XYO" firstAttribute="top" secondItem="Pzx-tb-dBl" secondAttribute="top" constant="8" id="GdE-Zz-mQC"/>
+                                    <constraint firstItem="7Rm-2N-tVs" firstAttribute="top" secondItem="Xho-Zo-XYO" secondAttribute="bottom" constant="19" id="SEK-9O-1by"/>
                                     <constraint firstAttribute="centerX" secondItem="Xho-Zo-XYO" secondAttribute="centerX" constant="-0.5" id="TGi-pm-hoh"/>
-                                    <constraint firstAttribute="trailing" secondItem="kZB-38-HUg" secondAttribute="trailing" constant="-20" id="d1K-Cu-OYJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="kZB-38-HUg" secondAttribute="bottom" constant="-20" id="fhf-9r-oX3"/>
-                                    <constraint firstItem="kZB-38-HUg" firstAttribute="leading" secondItem="Pzx-tb-dBl" secondAttribute="leading" id="khW-N0-Stw"/>
-                                    <constraint firstItem="kZB-38-HUg" firstAttribute="top" secondItem="Xho-Zo-XYO" secondAttribute="bottom" constant="282" id="n5R-Wg-olP"/>
+                                    <constraint firstAttribute="bottom" secondItem="kZB-38-HUg" secondAttribute="bottom" constant="-21" id="kFQ-Ki-oGh"/>
                                     <constraint firstAttribute="height" constant="380" id="szI-v1-6b2"/>
                                 </constraints>
                             </view>
