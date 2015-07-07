@@ -13,6 +13,7 @@
 		0F1F33541B4BECFB005BEBF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F1F33531B4BECFB005BEBF6 /* Images.xcassets */; };
 		0F1F33571B4BECFB005BEBF6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F1F33551B4BECFB005BEBF6 /* LaunchScreen.xib */; };
 		0F1F33631B4BECFB005BEBF6 /* MondrianSandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1F33621B4BECFB005BEBF6 /* MondrianSandboxTests.swift */; };
+		0F1F336D1B4BFCC3005BEBF6 /* BoxedBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1F336C1B4BFCC3005BEBF6 /* BoxedBorderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		0F1F335C1B4BECFB005BEBF6 /* MondrianSandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MondrianSandboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1F33611B4BECFB005BEBF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F1F33621B4BECFB005BEBF6 /* MondrianSandboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondrianSandboxTests.swift; sourceTree = "<group>"; };
+		0F1F336C1B4BFCC3005BEBF6 /* BoxedBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxedBorderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				0F1F334C1B4BECFB005BEBF6 /* AppDelegate.swift */,
 				0F1F334E1B4BECFB005BEBF6 /* ViewController.swift */,
+				0F1F336C1B4BFCC3005BEBF6 /* BoxedBorderView.swift */,
 				0F1F33501B4BECFB005BEBF6 /* Main.storyboard */,
 				0F1F33531B4BECFB005BEBF6 /* Images.xcassets */,
 				0F1F33551B4BECFB005BEBF6 /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				0F1F334F1B4BECFB005BEBF6 /* ViewController.swift in Sources */,
 				0F1F334D1B4BECFB005BEBF6 /* AppDelegate.swift in Sources */,
+				0F1F336D1B4BFCC3005BEBF6 /* BoxedBorderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

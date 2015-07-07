@@ -19,18 +19,28 @@
                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="400" placeholderIntrinsicHeight="400" translatesAutoresizingMaskIntoConstraints="NO" id="gCP-Bu-R8G" userLabel="ContainerView">
                                 <rect key="frame" x="100" y="100" width="400" height="400"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7OV-M1-dPO" userLabel="GreenBoxView">
-                                        <rect key="frame" x="170" y="150" width="60" height="100"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYf-TG-dSA" userLabel="RedBoxView" customClass="BoxedBorderView" customModule="MondrianSandbox" customModuleProvider="target">
+                                        <rect key="frame" x="230" y="137" width="125" height="125"/>
+                                        <color key="backgroundColor" red="1" green="0.069099226199288211" blue="0.16311824127340957" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="125" id="fxe-gv-7fr"/>
+                                            <constraint firstAttribute="height" constant="125" id="jTh-5m-nlH"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7OV-M1-dPO" userLabel="GreenBoxView" customClass="BoxedBorderView" customModule="MondrianSandbox" customModuleProvider="target">
+                                        <rect key="frame" x="170" y="137.5" width="60" height="125"/>
                                         <color key="backgroundColor" red="0.71966661310000002" green="1" blue="0.39880312379999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="bMC-uT-4i5"/>
-                                            <constraint firstAttribute="height" constant="100" id="v6A-TS-WIY"/>
+                                            <constraint firstAttribute="height" constant="125" id="v6A-TS-WIY"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.17146829291401622" green="0.84092729645968056" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="YYf-TG-dSA" firstAttribute="leading" secondItem="7OV-M1-dPO" secondAttribute="trailing" id="0A2-ir-TeL"/>
                                     <constraint firstAttribute="width" constant="400" id="ALV-Lq-71Y"/>
+                                    <constraint firstAttribute="centerY" secondItem="YYf-TG-dSA" secondAttribute="centerY" id="FMb-2s-oz5"/>
                                     <constraint firstAttribute="height" constant="400" id="aT4-Wc-CJw"/>
                                     <constraint firstAttribute="centerX" secondItem="7OV-M1-dPO" secondAttribute="centerX" id="f1e-5D-jwu"/>
                                     <constraint firstAttribute="centerY" secondItem="7OV-M1-dPO" secondAttribute="centerY" id="l0R-gs-aOx"/>
@@ -43,6 +53,10 @@
                             <constraint firstItem="gCP-Bu-R8G" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="ZlG-UE-EgT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenBoxView" destination="7OV-M1-dPO" id="YR8-P0-FNY"/>
+                        <outlet property="redBoxView" destination="YYf-TG-dSA" id="Nuj-sA-o2G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
