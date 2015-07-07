@@ -22,13 +22,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //redBoxView and greenBoxView were set up in IB
         
-        // add a black border to them in viewDidLoad
-        
-//        redBoxView.layer.borderColor = UIColor.blackColor().CGColor
-//        redBoxView.layer.borderWidth = 2.0
-//        
-//        greenBoxView.layer.borderColor = UIColor.blackColor().CGColor
-//        greenBoxView.layer.borderWidth = 2.0
+
     }
 
 

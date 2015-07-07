@@ -13,6 +13,7 @@
 		0F1F33261B4BEC7B005BEBF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F1F33251B4BEC7B005BEBF6 /* Images.xcassets */; };
 		0F1F33291B4BEC7B005BEBF6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F1F33271B4BEC7B005BEBF6 /* LaunchScreen.xib */; };
 		0F1F33351B4BEC7B005BEBF6 /* PaintAMondrianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1F33341B4BEC7B005BEBF6 /* PaintAMondrianTests.swift */; };
+		0FE3E3151B4C368900A82781 /* BoxedBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3E3141B4C368900A82781 /* BoxedBorderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		0F1F332E1B4BEC7B005BEBF6 /* PaintAMondrianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaintAMondrianTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1F33331B4BEC7B005BEBF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F1F33341B4BEC7B005BEBF6 /* PaintAMondrianTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintAMondrianTests.swift; sourceTree = "<group>"; };
+		0FE3E3141B4C368900A82781 /* BoxedBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxedBorderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		0F1F331B1B4BEC7B005BEBF6 /* PaintAMondrian */ = {
 			isa = PBXGroup;
 			children = (
+				0FE3E3141B4C368900A82781 /* BoxedBorderView.swift */,
 				0F1F331E1B4BEC7B005BEBF6 /* AppDelegate.swift */,
 				0F1F33201B4BEC7B005BEBF6 /* ViewController.swift */,
 				0F1F33221B4BEC7B005BEBF6 /* Main.storyboard */,
@@ -214,6 +217,7 @@
 			files = (
 				0F1F33211B4BEC7B005BEBF6 /* ViewController.swift in Sources */,
 				0F1F331F1B4BEC7B005BEBF6 /* AppDelegate.swift in Sources */,
+				0FE3E3151B4C368900A82781 /* BoxedBorderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				0F1F333A1B4BEC7B005BEBF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F1F333B1B4BEC7B005BEBF6 /* Build configuration list for PBXNativeTarget "PaintAMondrianTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				0F1F333D1B4BEC7B005BEBF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

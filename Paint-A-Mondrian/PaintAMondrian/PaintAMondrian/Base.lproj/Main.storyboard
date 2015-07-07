@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="PaintAMondrian" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,7 +15,150 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pzx-tb-dBl" userLabel="ContainerView">
+                                <rect key="frame" x="100" y="100" width="380" height="380"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZB-38-HUg" userLabel="ButtonContainerView">
+                                        <rect key="frame" x="0.0" y="310.5" width="400" height="89.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmw-Fq-3yp">
+                                                <rect key="frame" x="27" y="19" width="46" height="30"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4g1-Oj-IBN">
+                                                <rect key="frame" x="234" y="19" width="46" height="30"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGj-C3-Ji1">
+                                                <rect key="frame" x="319" y="19" width="46" height="30"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrD-32-mzk">
+                                                <rect key="frame" x="134" y="19" width="46" height="30"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.17146829290000001" green="0.84092729649999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="centerY" secondItem="mrD-32-mzk" secondAttribute="centerY" constant="10.75" id="4WM-Qu-3CQ"/>
+                                            <constraint firstAttribute="centerY" secondItem="BGj-C3-Ji1" secondAttribute="centerY" constant="10.75" id="6oE-Ll-VBN"/>
+                                            <constraint firstItem="qmw-Fq-3yp" firstAttribute="leading" secondItem="kZB-38-HUg" secondAttribute="leading" constant="27" id="84d-1V-4XR"/>
+                                            <constraint firstItem="mrD-32-mzk" firstAttribute="leading" secondItem="qmw-Fq-3yp" secondAttribute="trailing" constant="61" id="8bL-2l-lou"/>
+                                            <constraint firstItem="4g1-Oj-IBN" firstAttribute="leading" secondItem="mrD-32-mzk" secondAttribute="trailing" constant="54" id="SeQ-yj-Tyi"/>
+                                            <constraint firstAttribute="centerY" secondItem="qmw-Fq-3yp" secondAttribute="centerY" constant="10.75" id="VIk-O5-hNh"/>
+                                            <constraint firstAttribute="centerY" secondItem="4g1-Oj-IBN" secondAttribute="centerY" constant="10.75" id="iLd-Wy-hxX"/>
+                                            <constraint firstAttribute="trailing" secondItem="BGj-C3-Ji1" secondAttribute="trailing" constant="35" id="wvd-HY-sZi"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Rm-2N-tVs" userLabel="MondrianView">
+                                        <rect key="frame" x="40" y="48" width="300" height="229"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dcw-3U-XVj" userLabel="Boxed Border View1" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cz9-ke-T4i" userLabel="Boxed Border View2" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="91" y="14" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Rz-MO-DVg" userLabel="Boxed Border View3" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="101" y="24" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5rM-M2-3M6" userLabel="Boxed Border View4" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="111" y="34" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WwZ-9b-WTB" userLabel="Boxed Border View5" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="121" y="44" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BAB-ae-u9D" userLabel="Boxed Border View6" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="131" y="54" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="atn-wY-GgN" userLabel="Boxed Border View7" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="141" y="64" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wvr-DF-KeC" userLabel="Boxed Border View9" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="161" y="84" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1g-gQ-pzI" userLabel="Boxed Border View10" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="171" y="94" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vcX-bg-5Qn" userLabel="Boxed Border View11" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="181" y="104" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MGR-Ww-lWp" userLabel="Boxed Border View12" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="191" y="114" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7C-cB-9ra" userLabel="Boxed Border View13" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="201" y="124" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P8h-Dv-zPf" userLabel="Boxed Border View14" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="211" y="134" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYq-oK-ZBA" userLabel="Boxed Border View15" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="221" y="144" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VX2-ar-4mH" userLabel="Boxed Border View16" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="231" y="154" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cIC-2P-4Jr" userLabel="Boxed Border View8" customClass="BoxedBorderView" customModule="PaintAMondrian" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="64" width="80" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226200000002" blue="0.16311824129999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.96460659207976818" green="0.980758230398868" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paint A Mondrian!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xho-Zo-XYO">
+                                        <rect key="frame" x="122" y="8" width="137" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95842399165560799" green="1" blue="0.88334645248324961" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="380" id="Baq-Xn-VDp"/>
+                                    <constraint firstItem="Xho-Zo-XYO" firstAttribute="top" secondItem="Pzx-tb-dBl" secondAttribute="top" constant="8" id="GdE-Zz-mQC"/>
+                                    <constraint firstAttribute="centerX" secondItem="Xho-Zo-XYO" secondAttribute="centerX" constant="-0.5" id="TGi-pm-hoh"/>
+                                    <constraint firstAttribute="trailing" secondItem="kZB-38-HUg" secondAttribute="trailing" constant="-20" id="d1K-Cu-OYJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="kZB-38-HUg" secondAttribute="bottom" constant="-20" id="fhf-9r-oX3"/>
+                                    <constraint firstItem="kZB-38-HUg" firstAttribute="leading" secondItem="Pzx-tb-dBl" secondAttribute="leading" id="khW-N0-Stw"/>
+                                    <constraint firstItem="kZB-38-HUg" firstAttribute="top" secondItem="Xho-Zo-XYO" secondAttribute="bottom" constant="282" id="n5R-Wg-olP"/>
+                                    <constraint firstAttribute="height" constant="380" id="szI-v1-6b2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Pzx-tb-dBl" secondAttribute="centerY" constant="10" id="f27-Vy-z94"/>
+                            <constraint firstAttribute="centerX" secondItem="Pzx-tb-dBl" secondAttribute="centerX" constant="10" id="gn6-Gg-zhO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -10,9 +10,15 @@
 import UIKit
 import QuartzCore
 
+@IBDesignable
 class BoxedBorderView : UIView {
     //equal border width on all sides
-    var borderLineWidth:CGFloat = 5.0
+    @IBInspectable var borderWidth:CGFloat = 3.0 {
+        didSet{
+            layer.borderWidth = borderWidth
+            setNeedsDisplay()
+        }
+    }
     
     override func drawRect(rect: CGRect) {
 
@@ -20,7 +26,7 @@ class BoxedBorderView : UIView {
         
         //initialize border color and line width
         CGContextSetStrokeColorWithColor(context, UIColor.blackColor().CGColor)
-        CGContextSetLineWidth(context, borderLineWidth)
+        CGContextSetLineWidth(context, borderWidth)
 
         // border on top
         CGContextMoveToPoint(context, CGRectGetMinX(rect), CGRectGetMinY(rect))
