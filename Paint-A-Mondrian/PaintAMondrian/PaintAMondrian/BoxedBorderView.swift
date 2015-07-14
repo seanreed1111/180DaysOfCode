@@ -11,6 +11,7 @@ import UIKit
 import QuartzCore
 
 @IBDesignable
+
 class BoxedBorderView : UIView {
     //equal border width on all sides
     @IBInspectable var borderWidth:CGFloat = 3.0 {
@@ -19,6 +20,8 @@ class BoxedBorderView : UIView {
             setNeedsDisplay()
         }
     }
+    
+
     
     override func drawRect(rect: CGRect) {
 

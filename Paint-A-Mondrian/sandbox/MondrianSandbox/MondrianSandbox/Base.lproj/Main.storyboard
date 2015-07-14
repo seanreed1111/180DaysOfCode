@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,36 +20,71 @@
                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="400" placeholderIntrinsicHeight="400" translatesAutoresizingMaskIntoConstraints="NO" id="gCP-Bu-R8G" userLabel="ContainerView">
                                 <rect key="frame" x="100" y="100" width="400" height="400"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYf-TG-dSA" userLabel="RedBoxView" customClass="BoxedBorderView" customModule="MondrianSandbox" customModuleProvider="target">
-                                        <rect key="frame" x="230" y="137" width="125" height="125"/>
-                                        <color key="backgroundColor" red="1" green="0.069099226199288211" blue="0.16311824127340957" alpha="1" colorSpace="calibratedRGB"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2y-BU-h6f" userLabel="BoxView">
+                                        <rect key="frame" x="100" y="100" width="200" height="200"/>
+                                        <subviews>
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7OV-M1-dPO" userLabel="GreenBoxView" customClass="BoxedBorderView" customModule="MondrianSandbox" customModuleProvider="target">
+                                                <rect key="frame" x="34" y="38" width="60" height="125"/>
+                                                <color key="backgroundColor" red="0.71966661310000002" green="1" blue="0.39880312379999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="bMC-uT-4i5"/>
+                                                    <constraint firstAttribute="height" constant="125" id="v6A-TS-WIY"/>
+                                                </constraints>
+                                            </view>
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYf-TG-dSA" userLabel="RedBoxView" customClass="BoxedBorderView" customModule="MondrianSandbox" customModuleProvider="target">
+                                                <rect key="frame" x="102" y="38" width="96" height="108"/>
+                                                <color key="backgroundColor" red="1" green="0.069099226199288211" blue="0.16311824127340957" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="96" id="fxe-gv-7fr"/>
+                                                    <constraint firstAttribute="height" constant="108" id="jTh-5m-nlH"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="125" id="fxe-gv-7fr"/>
-                                            <constraint firstAttribute="height" constant="125" id="jTh-5m-nlH"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7OV-M1-dPO" userLabel="GreenBoxView" customClass="BoxedBorderView" customModule="MondrianSandbox" customModuleProvider="target">
-                                        <rect key="frame" x="170" y="137.5" width="60" height="125"/>
-                                        <color key="backgroundColor" red="0.71966661310000002" green="1" blue="0.39880312379999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="bMC-uT-4i5"/>
-                                            <constraint firstAttribute="height" constant="125" id="v6A-TS-WIY"/>
+                                            <constraint firstItem="7OV-M1-dPO" firstAttribute="leading" secondItem="a2y-BU-h6f" secondAttribute="leading" constant="34" id="3pX-Kd-thR"/>
+                                            <constraint firstItem="YYf-TG-dSA" firstAttribute="leading" secondItem="a2y-BU-h6f" secondAttribute="leading" constant="102" id="Kmr-jX-ts8"/>
+                                            <constraint firstItem="7OV-M1-dPO" firstAttribute="centerX" secondItem="a2y-BU-h6f" secondAttribute="centerX" constant="-36" id="PQk-Pm-cpC"/>
+                                            <constraint firstItem="7OV-M1-dPO" firstAttribute="centerY" secondItem="a2y-BU-h6f" secondAttribute="centerY" id="Rbu-LY-1ZF"/>
+                                            <constraint firstItem="7OV-M1-dPO" firstAttribute="centerY" secondItem="YYf-TG-dSA" secondAttribute="centerY" constant="8.5" id="Ubh-fQ-q93"/>
+                                            <constraint firstItem="YYf-TG-dSA" firstAttribute="top" secondItem="a2y-BU-h6f" secondAttribute="top" constant="38" id="rBu-uy-EeG"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcM-XU-dxP">
+                                        <rect key="frame" x="259" y="8" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressRedButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="H09-gL-NAa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5m-7L-pHO">
+                                        <rect key="frame" x="101" y="8" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressGreenButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="H23-ta-a0N"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.17146829291401622" green="0.84092729645968056" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="YYf-TG-dSA" firstAttribute="leading" secondItem="7OV-M1-dPO" secondAttribute="trailing" id="0A2-ir-TeL"/>
+                                    <constraint firstItem="E5m-7L-pHO" firstAttribute="centerY" secondItem="PcM-XU-dxP" secondAttribute="centerY" id="570-WQ-ElY"/>
                                     <constraint firstAttribute="width" constant="400" id="ALV-Lq-71Y"/>
-                                    <constraint firstAttribute="centerY" secondItem="YYf-TG-dSA" secondAttribute="centerY" id="FMb-2s-oz5"/>
+                                    <constraint firstAttribute="centerX" secondItem="PcM-XU-dxP" secondAttribute="centerX" constant="-82" id="Ed2-IM-Irq"/>
+                                    <constraint firstAttribute="centerY" secondItem="a2y-BU-h6f" secondAttribute="centerY" id="FJN-nY-eqe"/>
+                                    <constraint firstAttribute="centerX" secondItem="a2y-BU-h6f" secondAttribute="centerX" id="FRY-YF-byt"/>
+                                    <constraint firstItem="E5m-7L-pHO" firstAttribute="top" secondItem="gCP-Bu-R8G" secondAttribute="topMargin" id="Fyb-yN-qcN"/>
+                                    <constraint firstAttribute="centerX" secondItem="E5m-7L-pHO" secondAttribute="centerX" constant="76" id="RPn-zB-IH4"/>
                                     <constraint firstAttribute="height" constant="400" id="aT4-Wc-CJw"/>
-                                    <constraint firstAttribute="centerX" secondItem="7OV-M1-dPO" secondAttribute="centerX" id="f1e-5D-jwu"/>
-                                    <constraint firstAttribute="centerY" secondItem="7OV-M1-dPO" secondAttribute="centerY" id="l0R-gs-aOx"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -59,13 +95,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="boxView" destination="a2y-BU-h6f" id="OUS-QG-C1W"/>
                         <outlet property="greenBoxView" destination="7OV-M1-dPO" id="YR8-P0-FNY"/>
                         <outlet property="redBoxView" destination="YYf-TG-dSA" id="Nuj-sA-o2G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="499" y="274"/>
+            <point key="canvasLocation" x="703" y="188"/>
         </scene>
     </scenes>
 </document>
