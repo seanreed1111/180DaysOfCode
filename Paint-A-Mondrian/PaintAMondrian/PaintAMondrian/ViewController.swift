@@ -52,6 +52,7 @@ class ViewController: UIViewController {
         view.addSubview(buttonContainerView)
         
         mondrianContainerView.backgroundColor = UIColor.grayColor()
+        mondrianContainerView.tag = 0
         
         index = 1
         let xsize:CGFloat = 25.0
@@ -91,8 +92,9 @@ class ViewController: UIViewController {
             let tappedPoint = sender.locationInView(sender.view)
 
             if let tappedView = sender.view!.hitTest(tappedPoint, withEvent: nil){
-
-            tappedView.backgroundColor = currentColor
+                if tappedView.tag != 0 {
+                    tappedView.backgroundColor = currentColor
+                }
             }
         }
     }
