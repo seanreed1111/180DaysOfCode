@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     let redButton = BoxedBorderButton(frame: CGRectMake(225,0,50,50))
     let buttonContainerView = UIView(frame: CGRectMake(50, 400, 300, 100))
     
-    let mondrianContainerView = UIView(frame: CGRectMake(50, 50, 300, 300))
+    let mondrianContainerView = UIView(frame: CGRectMake(50, 50, 300, 200))
     
 
     let gestureRecognizer = UITapGestureRecognizer()
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         mondrianContainerView.tag = 0
         
         index = 1
-        let xsize:CGFloat = 25.0
+        let xsize:CGFloat = 75.0
         let ysize:CGFloat = 50.0
         for(var x = 0; x < 4; x++){
             for(var y=0; y<4; y++){
