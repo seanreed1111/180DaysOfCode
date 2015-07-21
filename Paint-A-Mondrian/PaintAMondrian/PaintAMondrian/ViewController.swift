@@ -62,7 +62,7 @@ class ViewController: UIViewController {
 
                 var newBoxView = BoxedBorderView(frame: CGRectMake(CGFloat(x)*xsize,CGFloat(y)*ysize,xsize,ysize))
                 newBoxView.tag = index
-                newBoxView.backgroundColor = UIColor.yellowColor()
+                newBoxView.backgroundColor = UIColor.whiteColor()
                 newBoxView.userInteractionEnabled = true
                 mondrianContainerView.addSubview(newBoxView)
                 index++
